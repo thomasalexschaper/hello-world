@@ -7,9 +7,11 @@ public class HelloWorld {
 
 		WorldObject france = new WorldObject("France", "Europa");
 		WorldObject germany = new WorldObject("Germany", "Europa");
+		WorldObject italia = new WorldObject("Italia", "Europa");
 
 		print(france);
 		print(germany);	
+		print(italia);
 	}
 
 	private static void print(WorldObject object) { 
