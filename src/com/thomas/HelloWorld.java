@@ -4,15 +4,16 @@ public class HelloWorld {
 
 	public static void main(String[] args) { 
 		System.out.println(HELLO_WORLD);
-		String[][] countries = new String[10][2];
 
-		countries[0][0] = "Germany";
-		countries[0][1] = "Europa";
+		print(france);
+		print(germany);
 
-		writeOutCountry(countries[0][0], countries[0][1]);
+		WorldObject france = new WorldObject("France", "Europa");
+		WorldObject germany = new WorldObject("Germany", "Europa");
 	}
-
-	private void writeOutCountry(String countryName, String continent) { 
-		System.out.println("The country is "+countryName+", and it is located in "+continent);
+	private static void print(WorldObject object) { 
+		System.out.println("This country with the name "
+			+object.getCountryName()+
+			" is located in "+object.getContinent());
 	}
 }
