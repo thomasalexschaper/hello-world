@@ -2,27 +2,37 @@ public class WorldObject {
 
 	private String countryName;
 	private String continent;
+	private String language;
 
-	public WorldObject (String countryName, String continent) { 
+	public WorldObject (String countryName, String continent, String language) { 
 		this.countryName = countryName;
 		this.continent = continent;
+		this.language = language;
 	}
 
 
-	private String getCountryName() { 
+	public String getCountryName() { 
 		return countryName;
 	}
 
-	private void setCountryName(String countryName) { 
+	public void setCountryName(String countryName) { 
 		this.countryName = countryName;
 	}
 
-	private String getContinent() { 
+	public String getContinent() { 
 		return continent;
 	}
 
-	private void setContinent(String continent) { 
+	public void setContinent(String continent) { 
 		this.continent = continent;
+	}
+
+	public String getLanguage() { 
+		return language;
+	}
+
+	public String setLanguage(String language) { 
+		this.language = language;
 	}
 
 }
