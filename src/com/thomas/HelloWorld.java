@@ -9,6 +9,7 @@ public class HelloWorld {
 		WorldObject germany = new WorldObject("Germany", "Europa", "French");
 		WorldObject italia = new WorldObject("Italia", "Europa");
 		WorldObject southAfrica = new WorldObject("South Africa", "Africa", "Afrikaans");
+		WorldObject chile = new WorldObject("Chile", "America", "Spanish");
 
 		print(france);
 		print(germany);	
