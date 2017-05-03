@@ -5,9 +5,10 @@ public class HelloWorld {
 	public static void main(String[] args) { 
 		System.out.println(HELLO_WORLD);
 
-		WorldObject germany = new WorldObject("Germany", "Europa");
-		WorldObject france = new WorldObject("France", "Europa");
+		WorldObject france = new WorldObject("France", "Europa", "German");
+		WorldObject germany = new WorldObject("Germany", "Europa", "French");
 		WorldObject italia = new WorldObject("Italia", "Europa");
+		WorldObject southAfrica = new WorldObject("South Africa", "Africa", "Afrikaans");
 
 		print(france);
 		print(germany);	
